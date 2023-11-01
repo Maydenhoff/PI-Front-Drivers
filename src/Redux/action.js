@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import {
   CREATE_NEW_DRIVER,
   DELETE_DRIVER,
@@ -14,10 +13,10 @@ import {
 } from "./action-type";
 import axios from "axios";
 
-const { DATA_BASE_URL } = import.meta.env
+const VITE_VERCEL_API_URL_BASE = import.meta.env.VITE_VERCEL_API_URL_BASE;
 
 export const createNewDriver = (driver, navigate) => {
-  const endpoint = `${DATA_BASE_URL}/drivers`;
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/drivers`;
   return async (dispatch) => {
     const { data } = await axios.post(endpoint, driver);
     if (data.status === "usuario_repetido") {
@@ -38,7 +37,7 @@ export const createNewDriver = (driver, navigate) => {
 };
 
 export const searchById = (id) => {
-  const endpoint = `${DATA_BASE_URL}/drivers/${id}`;
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/drivers/${id}`;
   return async (dispatch) => {
     const { data } = await axios.get(endpoint);
     if (data.name) {
@@ -51,7 +50,7 @@ export const searchById = (id) => {
 };
 
 export const searchByName = (name) => {
-  const endpoint = `${DATA_BASE_URL}/drivers/name?name=${name}`;
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/drivers/name?name=${name}`;
   return async (dispatch) => {
     const { data } = await axios.get(endpoint);
     if (data) {
@@ -64,7 +63,7 @@ export const searchByName = (name) => {
 };
 
 export const getTeams = () => {
-  const endpoint = `${DATA_BASE_URL}/teams`;
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/teams`;
   return async (dispatch) => {
     const { data } = await axios.get(endpoint);
     // console.log(data);
@@ -76,7 +75,7 @@ export const getTeams = () => {
 };
 
 export const deleteDriver = (id) => {
-  const endpoint = `${DATA_BASE_URL}/drivers/${id}`;
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/drivers/${id}`;
   return async (dispatch) => {
     const { data } = await axios.delete(endpoint);
     return dispatch({
@@ -111,7 +110,9 @@ export const reiniciarDetail = () => {
 };
 
 export const getDrivers = () => {
-  const endpoint = `${DATA_BASE_URL}/drivers`;
+  console.log(VITE_VERCEL_API_URL_BASE);
+  const endpoint = `${VITE_VERCEL_API_URL_BASE}/drivers`;
+  console.log(endpoint);
   return async (dispatch) => {
     const { data } = await axios.get(endpoint);
     return dispatch({

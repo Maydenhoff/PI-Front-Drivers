@@ -1,11 +1,9 @@
 import style from "./Home.module.css"
 import SearchBar from "../SearchBar/SearchBar"
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { filterByOrigen, filterByTeams, getDrivers, getTeams, orderAlfabeticamente, orderFechaNacimiento, searchByName } from "../../Redux/action"
+import { filterByTeams, getDrivers, getTeams, searchByName } from "../../Redux/action"
 import CardDriver from "../Card/CardDriver"
-import { Link } from "react-router-dom"
 import Nav from "../Nav/Nav"
 import Paginacion from "../../Paginacion/Paginacion"
 
@@ -82,8 +80,8 @@ const Home = () => {
                 }
             </div>
             <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} setInput={setInput} input={input} />
- <button name={"Prost"} onClick={buscarPorTeams}>{teams.filter((e) => e === "Prost")}</button>
- <button name={"Minardi"} onClick={buscarPorTeams}>{teams.filter((e) => e === "Minardi")}</button>
+ {/* <button name={"Prost"} onClick={buscarPorTeams}>{teams.filter((e) => e === "Prost")}</button>
+ <button name={"Minardi"} onClick={buscarPorTeams}>{teams.filter((e) => e === "Minardi")}</button> */}
  {/* <button>{console.log(teams)}</button> */}
         </div>
     )

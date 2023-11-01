@@ -4,7 +4,6 @@ import {
   FILTER_BY_ORIGEN,
   FILTER_BY_TEAMS,
   GET_DRIVERS,
-  GET_DRIVER_PRUEBA,
   GET_TEAMS,
   ORDER_ALFABETICAMENTE,
   ORDER_FECHA_NACIMIENTO,
@@ -123,14 +122,6 @@ const reduce = (state = initialState, action) => {
     case REINICIAR_DETAIL:
       return { ...state, detail: {} };
 
-case GET_DRIVER_PRUEBA:
-  console.log(action.payload);
-  console.log("entr");
-  return {
-    ...state,
-    pruebaDrivers: action.payload
-
-  }
 
       default:
       return { ...state };
