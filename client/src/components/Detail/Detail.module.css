@@ -1,0 +1,95 @@
+/*  ACA*/
+
+.divConteiner {
+    box-sizing: border-box;
+    width: 100%;
+    background: rgba(35, 35, 35, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-top: 2%;
+    /* margin-left: 20%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 650px
+  }
+  
+  
+  
+
+  
+  
+  .name {
+    position: initial;
+    background-color: transparent;
+    color: white;
+    font-size: 300%;
+    margin-top: 1px;
+    /* margin-bottom: 5%; */
+  }
+  
+  .info{
+    position: initial;
+    background-color: transparent;
+
+    color: white;
+    font-size: 140%;
+  }
+  
+  .divConteinerImage {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    width: 40%;
+    height: 97%;
+    cursor: pointer;
+    font-size: 20px;
+    display: grid;
+    border-right: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    padding: 10px;
+  }
+  .image {
+    background-color: black;
+    border: 1%;
+    margin-top: auto;
+    margin-block: auto;
+    /* justify-content: center; */
+      /* margin-left: 2%; */
+      width: 85%;
+      height: 585px;
+      
+      border-radius: 50%;
+      
+    }
+    .description {
+      position: absolute;
+     position: initial;
+     background-color: transparent;
+      margin-left: 20px;
+      margin-right: 20px;
+     color: white;
+     font-size: 140%;
+    }
+    
+    .divContainerInfo{
+      margin-left: 42%;
+      /* background-color: red; */
+      height: 100%;
+    }

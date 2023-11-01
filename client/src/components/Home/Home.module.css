@@ -1,0 +1,45 @@
+.div {
+
+    margin-top: 25px; 
+    background-color: transparent;
+    /* display: flex;
+    justify-content: space-between;
+     align-items: center;
+    padding-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 100%;
+    grid-column-gap: 3px; */
+
+}
+
+.divCard {
+    /* background-color: rgba(0, 0, 0, 0.525); */
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 26px;
+        grid-row-gap: 16px;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    
+    }
+
+
+
+.select {
+    width: 11%;
+    height: 30px;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    border-radius: 30px;
+    margin: 10px 0;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin-left: 10px;
+    /* padding-left: 30px; */
+    background-color: black;
+  }

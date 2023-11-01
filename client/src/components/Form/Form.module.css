@@ -1,0 +1,176 @@
+.divContainer {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+    
+    .form {
+        width: 850px;
+        height: 900px;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.503);
+        /* padding: 30px 30px 30px 30px; */
+        border-radius: 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    } 
+    
+    .divContainerInfo {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .p{
+      color: white;
+      font-size: 1.5em;
+      margin-right: 10px;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .label {
+        color: white;
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+    
+    .inputField {
+        width: 30%;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        border-radius: 30px;
+        margin: 10px 0;
+        color: black;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding-left: 30px;
+        /* margin-top: 30px; */
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    .date {
+        width: 30%;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        border-radius: 30px;
+        margin: 10px 0;
+        color: black;
+        font-size: 1.5em;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding-left: 30px;
+        margin-top: 1px;
+        margin-bottom: 3px;
+        background-color: white; /* Para hacerlo transparente */
+      }
+      
+      /* Estilo adicional para el icono de calendario en el input date */
+      .date::-webkit-calendar-picker-indicator {
+        color: black; /* Cambia el color del icono del calendario */
+        font-size: 0.8em; /* Tamaño del icono del calendario */
+        padding-right: 5px; /* Espaciado a la derecha del icono del calendario */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del icono */
+      }
+
+      .textarea {
+        width: 60%; 
+        max-width: 100%; /* Ancho máximo del textarea */
+        height: 100px; /* Altura deseada */
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        border-radius: 30px;
+        margin: 10px 0;
+        color: black;
+        font-size: 0.8em;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 2px;
+        margin-bottom: 1px;
+        background-color: white;
+        resize: none; 
+      }
+    .select {
+      width: 60%;
+      height: 100px;
+      border-bottom: 2px solid rgb(173, 173, 173);
+      border-radius: 30px;
+      margin: 10px 0;
+      color: black;
+      font-size: .8em;
+      font-weight: 500;
+      box-sizing: border-box;
+      padding-left: 30px;
+    } 
+
+    .pTeam {
+      color: white;
+      font-size: 0.8em;
+      margin-right: 10px;
+      margin-top: 1%;
+    }
+    
+    .json{
+      color: white;
+    }
+    .signupContainer {
+      color: rgb(244, 7, 7);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    
+  
+  .button {
+    position: relative;
+    
+    height: 2%;
+    width: 10%;
+    border: 2px solid  #033454;
+    ;
+    background-color:  #033454;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .button:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.253);
+    height: 100%;
+    width: 150px;
+    top: 0;
+    left: -200px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    filter: blur(10px);
+    transition-duration: .5s;
+  }
+  
+  .button:hover::after {
+    transform: translateX(600px);
+    transition-duration: .5s;
+  }
+  
+  
